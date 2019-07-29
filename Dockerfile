@@ -14,6 +14,6 @@ COPY install.R /install.R
 
 RUN Rscript /install.R
 
-WORKDIR /src
+WORKDIR /docs
 
 RUN Rscript -e 'rmarkdown::render("index.Rmd")'
