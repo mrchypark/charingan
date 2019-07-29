@@ -13,3 +13,7 @@ RUN apt-get update \
 COPY install.R /install.R
 
 RUN Rscript /install.R
+
+WORKDIR /src
+
+RUN Rscript -e 'rmarkdown::render("index.Rmd")'
