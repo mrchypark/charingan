@@ -1,4 +1,4 @@
-FROM mrchypark/build
+FROM mrchypark/charingan
 
 COPY src /src
 WORKDIR /src
