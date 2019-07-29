@@ -1,0 +1,44 @@
+---
+title: "제목"
+author: "박찬엽"
+output:
+  xaringan::moon_reader:
+    seal: false
+    css: ["default", "ninjutsu", "custom.css"]
+    lib_dir: libs
+    includes:
+      in_header: google_analytics.html
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '4:3'
+---
+layout: true
+
+background-image: url(https://user-images.githubusercontent.com/6179259/60290723-50002480-9954-11e9-96fe-3fbd4d7d11d9.png)
+background-size: cover
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+---
+
+class: center, middle, title-slide
+
+## 제목
+
+### <https://mrchypark.github.io/`r stringr::str_split(git2r::remote_url(), ":|/|\\.")[[1]][4]`/>
+
+#### [[의견 및 오류 신고]](https://github.com/`r stringr::str_split(git2r::remote_url(), ":|/|\\.")[[1]][3]`/`r stringr::str_split(git2r::remote_url(), ":|/|\\.")[[1]][4]`/issues) 
+
+### 박찬엽 [`r fontawesome::fa("at", fill="#FF1B70")`][mail] [`r fontawesome::fa("facebook-f", fill="#FF1B70")`][fb] [`r fontawesome::fa("github", fill="#FF1B70")`][github]
+
+### .small[2019년 7월 22일] .tiny[update `r Sys.Date()`]
+
+[mail]: mailto:mrchypark@gmail.com
+[fb]: https://www.facebook.com/mrchypark
+[github]: https://github.com/mrchypark
+
+---
