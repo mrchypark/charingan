@@ -7,6 +7,7 @@ RUN apt-get update \
   libxml2-dev \
   libssh2-1-dev \
   libgit2-dev \
+  curl \
   && rm -rf /var/lib/apt/lists/*
 
 COPY install.R /install.R
