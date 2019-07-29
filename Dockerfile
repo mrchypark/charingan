@@ -5,6 +5,8 @@ RUN apt-get update \
   libssl-dev \
   libcurl4-openssl-dev \
   libxml2-dev \
+  libssh2-1-dev \
+  libgit2-dev \
   && rm -rf /var/lib/apt/lists/*
 
 COPY install.R /install.R
