@@ -1,8 +1,4 @@
-FROM rocker/r-rmd
-
-COPY install.R /install.R
-
-RUN Rscript /install.R
+FROM mrchypark/build
 
 COPY src /src
 WORKDIR /src
