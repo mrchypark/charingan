@@ -1,8 +1,11 @@
 workflow "build pdf" {
   on = "push"
-  resolves = ["docker://"]
+  resolves = ["build"]
 }
 
-action "docker://" {
-  uses = "docker://"
+action "build" {
+  uses = "./docs"
+  env = {
+    
+  }
 }

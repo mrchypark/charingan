@@ -5,7 +5,7 @@ output:
   xaringan::moon_reader:
     seal: false
     css: ["default", "ninjutsu", "custom.css"]
-    lib_dir: libs
+    lib_dir: "libs"
     includes:
       in_header: google_analytics.html
     nature:
@@ -21,6 +21,7 @@ background-size: cover
 
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE)
+library(tidyverse)
 ```
 
 ---
@@ -31,14 +32,16 @@ class: center, middle, title-slide
 
 ### <https://mrchypark.github.io/`r stringr::str_split(git2r::remote_url(), ":|/|\\.")[[1]][4]`/>
 
-#### [[의견 및 오류 신고]](https://github.com/`r stringr::str_split(git2r::remote_url(), ":|/|\\.")[[1]][3]`/`r stringr::str_split(git2r::remote_url(), ":|/|\\.")[[1]][4]`/issues) 
+#### [[의견 및 오류 신고]](https://github.com/`r stringr::str_split(git2r::remote_url(), ":|/|\\.")[[1]][3]`/`r stringr::str_split(git2r::remote_url(), ":|/|\\.")[[1]][4]`/issues)  [[pdf다운]](https://github.com/`r stringr::str_split(git2r::remote_url(), ":|/|\\.")[[1]][3]`/`r stringr::str_split(git2r::remote_url(), ":|/|\\.")[[1]][4]`/raw/master/docs/`r stringr::str_split(git2r::remote_url(), ":|/|\\.")[[1]][4]`.pdf)
 
-### 박찬엽 [`r fontawesome::fa("at", fill="#FF1B70")`][mail] [`r fontawesome::fa("facebook-f", fill="#FF1B70")`][fb] [`r fontawesome::fa("github", fill="#FF1B70")`][github]
+### 박찬엽 [`r fontawesome::fa("at", fill="#FF1B70")`][mail] [`r fontawesome::fa("facebook-f", fill="#FF1B70")`][fb] [`r fontawesome::fa("github", fill="#FF1B70")`][github] [`r fontawesome::fa("beer", fill="#FF1B70")`][beer]
 
 ### .small[2019년 7월 22일] .tiny[update `r Sys.Date()`]
 
+[beer]: https://mrchypark.github.io/donateme/
 [mail]: mailto:mrchypark@gmail.com
 [fb]: https://www.facebook.com/mrchypark
 [github]: https://github.com/mrchypark
 
 ---
+
