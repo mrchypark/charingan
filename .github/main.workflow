@@ -5,7 +5,5 @@ workflow "build pdf" {
 
 action "build" {
   uses = "./docs"
-  env = {
-    
-  }
+  runs = "Rscript -e 'rmarkdown::render("index.Rmd")'"
 }

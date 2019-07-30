@@ -16,4 +16,6 @@ RUN Rscript /install.R
 
 WORKDIR /docs
 
-RUN Rscript -e 'rmarkdown::render("index.Rmd")'
+COPY entrypoint.sh /entrypoint.sh
+
+ENTRYPOINT ["/entrypoint.sh"]
